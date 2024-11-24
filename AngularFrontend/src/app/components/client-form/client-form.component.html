@@ -1,0 +1,15 @@
+<div>
+    <h1>Add Client</h1>
+    <form (ngSubmit)="onSubmit()">
+      <label for="companyName">Company Name</label>
+      <input id="companyName" [(ngModel)]="client.companyName" name="companyName" required>
+      <label for="size">Size</label>
+      <select id="size" [(ngModel)]="client.size" name="size" required>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+  
